@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      (function() {
+        const theme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.classList.remove('dark', 'light');
+        document.documentElement.classList.add(theme);
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uni-Study - Student Grade Tracker</title>
+    <meta name="description" content="A tool for students to track subjects and calculate weighted assignment marks.">
+    <meta name="author" content="Uni-Study" />
+
+    
+    
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@UniStudy" />
+    <meta property="og:title" content="Uni-Study - Student Grade Tracker">
+  <meta name="twitter:title" content="Uni-Study - Student Grade Tracker">
+  <meta property="og:description" content="A tool for students to track subjects and calculate weighted assignment marks.">
+  <meta name="twitter:description" content="A tool for students to track subjects and calculate weighted assignment marks.">
+  <link rel="icon" type="image/png" href="/icon.png">
+</head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
